@@ -1,4 +1,3 @@
-````markdown
 # AI-Powered Text Transliteration and NER API
 
 This project provides a REST API for transliterating text and extracting named entities (NER), powered by Google's Gemini API and FastAPI. It supports text and docx file inputs, offering transliteration to a specified output language, and NER extraction with transliteration.
@@ -28,12 +27,11 @@ Here are the step-by-step instructions to set up and run the project:
 
 First, clone the project from GitHub using the following command:
 
-````
-
 ```bash
 git clone [https://github.com/Okramjimmy/gemini_transliteration.git]
 cd [gemini_transliteration]
-````
+```
+
 ````
 
 ### 2. Install `uv`
@@ -179,6 +177,4 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 This project is licensed under the [Okram Jimmy] License.
 
-```
-
-```
+````
