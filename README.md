@@ -29,7 +29,7 @@ First, clone the project from GitHub using the following command:
 
 ```bash
 git clone [https://github.com/Okramjimmy/gemini_transliteration.git]
-cd [gemini_transliteration]
+cd gemini_transliteration
 ```
 
 ### 2. Install `uv`
@@ -98,7 +98,7 @@ Create a `.env` file in the root of your project directory. Add the necessary en
 ```env
 GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
 INPUT_LANG="English"
-OUTPUT_LANG="Assamese"
+OUTPUT_LANG=""
 LLM_MODEL="gemini-1.5-pro-latest"
 ```
 
