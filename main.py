@@ -46,6 +46,16 @@ class NERResponse(BaseModel):
 class ErrorResponse(BaseModel):
     error:str
 
+class WelcomeResponse(BaseModel):
+    message: str
+
+@app.post("/", response_model=WelcomeResponse)
+async def welcome():
+    """
+    Root endpoint for the API.
+    Returns a welcome message with a link to the API documentation.
+    """
+    return WelcomeResponse(message="Welcome to the AI Transliteration and NER API! Please go to `/docs` for the API documentation.")
 
 @app.post("/transliterate/text", response_model=TransliterationResponse | ErrorResponse, responses={400: {"model": ErrorResponse}})
 async def transliterate_text(text: str = Form(...)):
@@ -148,4 +158,4 @@ async def extract_and_transliterate_ner(file: UploadFile = File(...)):
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)

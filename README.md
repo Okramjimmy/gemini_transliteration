@@ -28,7 +28,7 @@ Here are the step-by-step instructions to set up and run the project:
 First, clone the project from GitHub using the following command:
 
 ```bash
-git clone [https://github.com/Okramjimmy/gemini_transliteration.git]
+git clone https://github.com/Okramjimmy/gemini_transliteration.git
 cd gemini_transliteration
 ```
 
@@ -113,7 +113,7 @@ LLM_MODEL="gemini-1.5-pro-latest"
 Finally, run the FastAPI application using `uvicorn`:
 
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000
+uv run uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 - `main` refers to the name of the python file where your FastAPI app instance is declared (in your case `main.py`)
