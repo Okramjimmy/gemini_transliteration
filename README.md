@@ -32,8 +32,6 @@ git clone [https://github.com/Okramjimmy/gemini_transliteration.git]
 cd [gemini_transliteration]
 ```
 
-````
-
 ### 2. Install `uv`
 
 `uv` is a blazing-fast Python package installer and resolver. Choose one of the following installation methods that best fits your operating system:
@@ -177,4 +175,6 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 This project is licensed under the [Okram Jimmy] License.
 
-````
+```
+
+```
